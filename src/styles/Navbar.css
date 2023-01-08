@@ -1,0 +1,68 @@
+.navbar {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  width: 100%;
+  background-color: white;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-title-link:visited {
+  color: #1b1d23;
+}
+
+.navbar-title-img {
+  height: 32px;
+}
+
+.navbar-toggle-icon {
+  width: 24px;
+  height: 17px;
+}
+
+.navbar-toggle-icon:hover {
+  cursor: pointer;
+}
+
+.nav-links-container {
+  position: absolute;
+  min-height: 100vh;
+  height: 100%;
+  top: 100px;
+  right: 0px;
+  width: 100%;
+  background-color: hsla(0, 0%, 0%, 0.52);
+}
+
+.nav-links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  padding: 40.5px 48px;
+  background-color: #eeeff4;
+  right: 0px;
+  font-family: "League Spartan";
+  width: 343px;
+  height: 235px;
+  gap: 17px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #1b1d23;
+}
+
+.nav-link {
+  color: #1b1d23;
+}
+
+.nav-link:visited {
+  color: #1b1d23;
+}
+
+.nav-link:active {
+  color: skyblue;
+}
