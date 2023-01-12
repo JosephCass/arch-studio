@@ -75,9 +75,9 @@
 
 .home-welcome {
   background-color: rgb(255, 255, 255);
-  height: 812px;
+  height: auto;
   max-height: 812px;
-  width: 100%;
+  max-width: 375px;
   /* max-width: 100vw; */
   padding: 72px 32px 95px 32px;
 }
@@ -170,7 +170,7 @@
   /* padding: 73px 0 132px 0; */
   padding-top: 73px;
   gap: 24px;
-  /* position: relative; */
+  position: relative;
 }
 
 .home-featured-title {
@@ -241,60 +241,5 @@
 }
 
 .home-featured-all-link:active {
-  background-color: gray;
-}
-
-/* Home featured footer section */
-
-.home-footer-background {
-  background-color: #eeeff4;
-  width: 100%;
-  height: 383px;
-}
-
-.home-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  gap: 23px;
-  top: 3132px;
-  width: 100%;
-  background-color: hsla(0, 0%, 100%, 0);
-}
-
-.home-footer-title {
-  padding: 49px 30px 46px 32px;
-  background-color: #1b1d23;
-}
-
-.home-footer-link {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  color: #7d828f;
-  font-family: "League Spartan";
-}
-
-.home-footer-link:visited {
-  color: #7d828f;
-}
-
-.home-footer-link-last {
-  font-family: "League Spartan";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 25px;
-  color: white;
-  background-color: #1b1d23;
-  padding: 25px 0 22px 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 24px;
-  width: 252px;
-}
-
-.home-footer-link-last:visited {
-  color: white;
+  background-color: #c8ccd8;
 }

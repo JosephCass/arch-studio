@@ -1,0 +1,50 @@
+.portfolio {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+/* Portfolio projects section */
+
+.portfolio-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 128px;
+}
+
+.portfolio-project-container {
+  position: relative;
+}
+
+.portfolio-project-img {
+  filter: brightness(70%);
+}
+
+.portfolio-project-info {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 24px;
+  bottom: 23px;
+}
+
+.portfolio-project-name {
+  font-family: "League Spartan";
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: white;
+}
+
+.portfolio-project-date {
+  font-family: "League Spartan";
+  font-size: 18px;
+  line-height: 24px;
+  color: white;
+  opacity: 0.75;
+}
+
+/* Portfolio footer section*/

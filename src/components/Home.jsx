@@ -4,9 +4,10 @@ import arrowIcon from "../assets/icons/icon-arrow.svg";
 import rectangleIcon from "../assets/icons/home-rectangle-icon.svg";
 import smallTeam from "../assets/home/mobile/image-small-team.jpg";
 import delSol from "../assets/portfolio/mobile/image-del-sol.jpg";
-import _22B8Tower from "../assets/portfolio/mobile/image-228b.jpg";
+import towerImage from "../assets/portfolio/mobile/image-228b.jpg";
 import lePrototype from "../assets/portfolio/mobile/image-prototype.jpg";
 import whiteArch from "../assets/icons/arch-icon-white.svg";
+import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
 
 export default function Home() {
@@ -81,7 +82,7 @@ export default function Home() {
         <Link to="/portfolio" className="home-featured-link">
           <img
             className="home-featured-img"
-            src={_22B8Tower}
+            src={towerImage}
             alt="22B8 Tower architechture"
           />
           <div className="home-featured-info">
@@ -104,29 +105,7 @@ export default function Home() {
           See All
           <img className="home-arrow-icon" src={arrowIcon} alt="" />
         </Link>
-      </div>
-      <div className="home-footer-background"></div>
-      <div className="home-footer">
-        <Link to="/" className="home-footer-title">
-          <img
-            className="home-footer-title-svg"
-            src={whiteArch}
-            alt="Site title logo"
-          />
-        </Link>
-        <Link to="/portfolio" className="home-footer-link">
-          Portfolio
-        </Link>
-        <Link to="/about" className="home-footer-link">
-          About Us
-        </Link>
-        <Link to="/contact" className="home-footer-link">
-          Contact
-        </Link>
-        <Link to="/portfolio" className="home-footer-link-last">
-          See Our Portfolio
-          <img className="home-arrow-icon" src={arrowIcon} alt="" />
-        </Link>
+        <Footer />
       </div>
     </div>
   );
