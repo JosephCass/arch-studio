@@ -66,3 +66,59 @@
 .nav-link:active {
   color: skyblue;
 }
+
+.tablet {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    padding: 56px 0 56px 0;
+    justify-content: flex-start;
+    gap: 71px;
+  }
+
+  .navbar-title-img {
+    padding-left: 97px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .tablet {
+    display: initial;
+  }
+
+  .nav-links-tablet {
+    display: flex;
+    flex-direction: row;
+    gap: 55.5px;
+  }
+
+  .nav-link-tablet {
+    color: #7d828f;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+  }
+
+  .side-path-rectangle {
+    position: absolute;
+    top: 0;
+    left: 38px;
+    width: 1px;
+    height: 104px;
+  }
+
+  .side-path-text {
+    color: #c8ccd8;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    transform: rotate(90deg);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}

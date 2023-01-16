@@ -213,6 +213,7 @@
   font-family: "League Spartan";
   font-size: 32px;
   line-height: 40px;
+  color: white;
 }
 
 .home-featured-text {
@@ -242,4 +243,14 @@
 
 .home-featured-all-link:active {
   background-color: #c8ccd8;
+}
+
+.testing {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
 }
