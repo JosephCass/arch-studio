@@ -3,35 +3,48 @@
   flex-direction: column;
   /* align-items: center; */
   max-width: 100vw;
+  width: 100%;
 }
 
 /* About page team section */
 .about-team {
+  padding-bottom: 365px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-team-picture {
   position: relative;
+  /* padding-bottom: 365px; */
+  max-width: 100vw;
 }
 
 .about-team-img {
   max-width: 100vw;
   height: auto;
-  width: 100%;
+  filter: brightness(75%);
 }
 
-.about-team-background {
+/* .about-team-background {
   position: absolute;
   width: 91%;
   height: 18%;
   bottom: 0;
   background-color: white;
-}
+} */
 
 .about-team-info {
+  position: absolute;
   padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 20px;
-  padding-bottom: 76px;
+  /* padding-right: 32px; */
+  padding-top: 65px;
+  /* padding-bottom: 76px; */
+  max-width: 100vw;
+  bottom: -286px;
+  left: 0px;
+  background-color: white;
+  margin-right: 32px;
 }
 
 .about-team-title {
@@ -127,4 +140,86 @@
   font-size: 18px;
   font-size: 24px;
   opacity: 0.75;
+}
+
+.about-tablet {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .about {
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+
+  .about-tablet {
+    display: inherit;
+  }
+
+  .about-team {
+    padding-bottom: 200px;
+  }
+
+  .about-team-info {
+    /* bottom: 0; */
+    right: 0px;
+    margin-right: 0px;
+    margin-left: 58px;
+    bottom: 0px;
+    padding-bottom: 0px;
+    padding-left: 60px;
+  }
+
+  .about-team-title {
+    font-family: "League Spartan";
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 21px;
+    letter-spacing: -2px;
+  }
+
+  .about-section-title {
+    position: absolute;
+    top: -85px;
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 200px;
+    color: #eeeff4;
+    right: 0;
+  }
+
+  .about-info-break {
+    height: 1px;
+    width: 65px;
+    background-color: #c8ccd8;
+    margin-bottom: 73px;
+    margin-top: 88px;
+  }
+
+  .about-heritage {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 207px;
+  }
+
+  .about-break-icon {
+    padding-left: 0px;
+  }
+
+  .about-leaders {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .about-leaders-profiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, max(280px));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    justify-content: center;
+    gap: 11px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
 }

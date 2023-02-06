@@ -1,7 +1,7 @@
 .home-footer-background {
   background-color: #eeeff4;
   width: 100%;
-  max-width: 375px;
+  max-width: 100%;
   height: 383px;
 }
 
@@ -11,7 +11,6 @@
   align-items: center;
   position: absolute;
   gap: 23px;
-  /* top: 1132px; */
   bottom: 83px;
   width: 100%;
   background-color: hsla(0, 0%, 100%, 0);
@@ -55,4 +54,38 @@
 
 .home-footer-link-last:active {
   background-color: #c8ccd8;
+}
+
+@media only screen and (min-width: 768px) {
+  .home-footer-background {
+    height: 120px;
+    width: 79%;
+    align-self: flex-start;
+  }
+
+  .home-footer {
+    flex-direction: row;
+    bottom: 0;
+    left: 0;
+    gap: 48px;
+  }
+
+  .home-footer-title {
+    height: 120px;
+    width: 15%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-footer-link {
+    width: 11%;
+  }
+
+  .home-footer-link-last {
+  }
+}
+
+@media only screen and (min-width: 992px) {
 }

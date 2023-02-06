@@ -6,19 +6,35 @@ import smallTeam from "../assets/home/mobile/image-small-team.jpg";
 import delSol from "../assets/portfolio/mobile/image-del-sol.jpg";
 import towerImage from "../assets/portfolio/mobile/image-228b.jpg";
 import lePrototype from "../assets/portfolio/mobile/image-prototype.jpg";
-import whiteArch from "../assets/icons/arch-icon-white.svg";
+// import whiteArch from "../assets/icons/arch-icon-white.svg";
 import Footer from "../components/Footer.jsx";
 import { Link } from "react-router-dom";
+import homeSide from "../assets/home/tablet/home-side.svg";
+import tabletParamour from "../assets/home/tablet/image-hero-paramour.jpg";
+import smallTeamTablet from "../assets/home/tablet/image-small-team.jpg";
+import delSolTablet from "../assets/portfolio/tablet/image-del-sol.jpg";
+import towerTablet from "../assets/portfolio/tablet/image-228b.jpg";
+import prototypeTablet from "../assets/portfolio/tablet/image-prototype.jpg";
 
 export default function Home() {
   return (
     <div className="home">
+      <img className="side-route-title tablet" src={homeSide} alt="" />
       <div className="home-project-paramour">
-        <img
-          className="home-project-paramour-img"
-          src={paramour}
-          alt="art architecture"
-        />
+        <picture className="home-project-paramour-img">
+          <source
+            media="(max-width: 768px)"
+            type="image/jpg"
+            srcSet={paramour}
+          />
+          <source
+            media="(max-width: 992px)"
+            type="image/jpg"
+            srcSet={tabletParamour}
+          />
+          <img src={paramour} />
+        </picture>
+
         <div className="home-project-paramour-info">
           <h2 className="home-project-paramour-title">Project Paramour</h2>
           <p className="home-project-paramour-text">
@@ -32,12 +48,13 @@ export default function Home() {
         </div>
       </div>
       <div className="home-welcome">
+        <h2 className="home-welcome-big tablet">Welcome</h2>
         <img
-          className="home-welcome-rectangle-icon"
+          className="home-welcome-rectangle-icon mobile"
           src={rectangleIcon}
           alt=""
         />
-        <h2 className="home-welcome-title">Welcome To Arch Studio</h2>
+        <h2 className="home-welcome-title">Welcome to Arch Studio</h2>
         <p className="home-welcome-text">
           We have a unique network and skillset to help bring your projects to
           life. Our small team of highly skilled individuals combined with our
@@ -57,7 +74,19 @@ export default function Home() {
         </p>
       </div>
       <div className="home-team">
-        <img className="home-team-img" src={smallTeam} alt="Architechture" />
+        <picture className="home-team-img">
+          <source
+            media="(max-width: 768px)"
+            type="image/jpg"
+            srcSet={smallTeam}
+          />
+          <source
+            media="(max-width: 992px)"
+            type="image/jpg"
+            srcSet={smallTeamTablet}
+          />
+          <img src={smallTeam} />
+        </picture>
         <div className="home-team-info">
           <h2 className="home-team-title">Small team, big ideas</h2>
           <Link to="/about" className="home-team-link">
@@ -67,41 +96,74 @@ export default function Home() {
         </div>
       </div>
       <div className="home-featured">
-        <h2 className="home-featured-title">Featured</h2>
+        <div className="home-featured-top">
+          <h2 className="home-featured-title">Featured</h2>
+          <Link to="/portfolio" className="home-featured-top-link">
+            See All
+            <img className="home-arrow-icon" src={arrowIcon} alt="" />
+          </Link>
+        </div>
         <Link to="/portfolio" className="home-featured-link">
-          <img
-            className="home-featured-img"
-            src={delSol}
-            alt="Project del sol architechture"
-          />
+          <picture className="home-project-paramour-img">
+            <source
+              media="(max-width: 768px)"
+              type="image/jpg"
+              srcSet={delSol}
+            />
+            <source
+              media="(max-width: 992px)"
+              type="image/jpg"
+              srcSet={delSolTablet}
+            />
+            <img src={delSol} />
+          </picture>
           <div className="home-featured-info">
             <h3 className="home-featured-name">Project Del Sol</h3>
             <p className="home-featured-text">View All Projects</p>
           </div>
+          <p className="home-featured-num tablet">1</p>
         </Link>
         <Link to="/portfolio" className="home-featured-link">
-          <img
-            className="home-featured-img"
-            src={towerImage}
-            alt="22B8 Tower architechture"
-          />
+          <picture className="home-project-paramour-img">
+            <source
+              media="(max-width: 768px)"
+              type="image/jpg"
+              srcSet={towerImage}
+            />
+            <source
+              media="(max-width: 992px)"
+              type="image/jpg"
+              srcSet={towerTablet}
+            />
+            <img src={towerImage} />
+          </picture>
           <div className="home-featured-info">
             <h3 className="home-featured-name">228B Tower</h3>
             <p className="home-featured-text">View All Projects</p>
           </div>
+          <p className="home-featured-num tablet">2</p>
         </Link>
-        <Link to="/portfolio" className="home-featured-link">
-          <img
-            className="home-featured-img"
-            src={lePrototype}
-            alt="Le Prototype architechture"
-          />
+        <Link to="/portfolio" className="home-featured-link last-link-home">
+          <picture className="home-project-paramour-img">
+            <source
+              media="(max-width: 768px)"
+              type="image/jpg"
+              srcSet={lePrototype}
+            />
+            <source
+              media="(max-width: 992px)"
+              type="image/jpg"
+              srcSet={prototypeTablet}
+            />
+            <img src={lePrototype} />
+          </picture>
           <div className="home-featured-info">
             <h3 className="home-featured-name">Le Prototype</h3>
             <p className="home-featured-text">View All Projects</p>
           </div>
+          <p className="home-featured-num tablet">3</p>
         </Link>
-        <Link to="/portfolio" className="home-featured-all-link">
+        <Link to="/portfolio" className="home-featured-all-link mobile">
           See All
           <img className="home-arrow-icon" src={arrowIcon} alt="" />
         </Link>

@@ -6,23 +6,44 @@ import jakePic from "../assets/about/desktop/avatar-jake.jpg";
 import thompsonPic from "../assets/about/desktop/avatar-thompson.jpg";
 import jacksonPic from "../assets/about/desktop/avatar-jackson.jpg";
 import mariaPic from "../assets/about/desktop/avatar-maria.jpg";
+import sideTitle from "../assets/about/tablet/about-side.svg";
+import heroTablet from "../assets/about/tablet/image-hero.jpg";
 
 export default function About() {
   return (
     <div className="about">
+      <img
+        src={sideTitle}
+        alt="About"
+        className="side-route-title about-tablet"
+      />
       <div className="about-team">
         <div className="about-team-picture">
-          <img className="about-team-img" src={heroImage} alt="" />
-          <div className="about-team-background"></div>
-        </div>
-        <div className="about-team-info">
-          <h2 className="about-team-title">Your team of professionals</h2>
-          <p className="about-team-text">
-            Our small team of world-class professionals will work with you every
-            step of the way. Strong relationships are at the core of everything
-            we do. This extends to the relationship our projects have with their
-            surroundings.
-          </p>
+          <picture className="about-team-img">
+            <source
+              media="(max-width: 768px)"
+              type="image/jpg"
+              srcSet={heroImage}
+            />
+            <source
+              media="(max-width: 992px)"
+              type="image/jpg"
+              srcSet={heroTablet}
+            />
+            <img className="about-team-img" src={heroImage} />
+          </picture>
+          <div className="about-team-info">
+            <h1 className="about-section-title about-tablet">About</h1>
+            <div className="about-info-break about-tablet"></div>
+            <h2 className="about-team-title">Your team of professionals</h2>
+            <p className="about-team-text">
+              Our small team of world-class professionals will work with you
+              every step of the way. Strong relationships are at the core of
+              everything we do. This extends to the relationship our projects
+              have with their surroundings.
+            </p>
+          </div>
+          {/* <div className="about-team-background"></div> */}
         </div>
       </div>
       <img className="about-break-icon" src={rectangleIcon} alt="" />

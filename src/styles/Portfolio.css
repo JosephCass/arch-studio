@@ -4,6 +4,7 @@
   flex-direction: column;
   width: 100%;
   align-items: center;
+  position: relative;
 }
 
 /* Portfolio projects section */
@@ -13,6 +14,7 @@
   flex-direction: column;
   gap: 24px;
   margin-bottom: 128px;
+  align-items: center;
 }
 
 .portfolio-project-container {
@@ -47,4 +49,36 @@
   opacity: 0.75;
 }
 
+.tablet {
+  display: none;
+}
+
 /* Portfolio footer section*/
+
+@media only screen and (min-width: 768px) {
+  .tablet {
+    display: initial;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .side-route-title {
+    position: fixed;
+    top: 148px;
+    left: 32px;
+  }
+
+  .portfolio-projects {
+    margin-bottom: 200px;
+  }
+
+  .portfolio-project-info {
+    left: 40px;
+    bottom: 39px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+}
