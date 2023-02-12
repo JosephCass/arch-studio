@@ -168,6 +168,7 @@
     bottom: 0px;
     padding-bottom: 0px;
     padding-left: 60px;
+    height: 431px;
   }
 
   .about-team-title {
@@ -183,7 +184,7 @@
     position: absolute;
     top: -85px;
     font-weight: 700;
-    font-size: 150px;
+    font-size: 145px;
     line-height: 200px;
     color: #eeeff4;
     right: 0;
@@ -194,7 +195,7 @@
     width: 65px;
     background-color: #c8ccd8;
     margin-bottom: 73px;
-    margin-top: 88px;
+    margin-top: 33px;
   }
 
   .about-heritage {

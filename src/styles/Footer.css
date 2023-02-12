@@ -52,6 +52,10 @@
   width: 252px;
 }
 
+.home-footer-link-last:hover {
+  background-color: #60636d;
+}
+
 .home-footer-link-last:active {
   background-color: #c8ccd8;
 }

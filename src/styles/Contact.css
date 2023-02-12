@@ -7,31 +7,44 @@
 
 /* Contact page project section */
 .contact-project {
+  padding-bottom: 365px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-project-picture {
   position: relative;
+  /* padding-bottom: 365px; */
+  max-width: 100vw;
 }
 
 .contact-project-img {
   max-width: 100vw;
   height: auto;
   width: 100%;
+  filter: brightness(75%);
 }
 
-.contact-project-background {
+/* .contact-project-background {
   position: absolute;
   width: 91%;
   height: 18%;
   bottom: 0;
   background-color: white;
-}
+} */
 
 .contact-project-info {
+  position: absolute;
   padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 20px;
-  padding-bottom: 76px;
+  /* padding-right: 32px; */
+  padding-top: 65px;
+  /* padding-bottom: 76px; */
+  max-width: 100vw;
+  bottom: -286px;
+  left: 0px;
+  background-color: white;
+  margin-right: 32px;
 }
 
 .contact-project-title {
@@ -48,6 +61,7 @@
 }
 
 .break-icon {
+  padding-left: 32px;
   margin-bottom: 69px;
   align-self: flex-start;
 }
@@ -188,6 +202,7 @@
   justify-content: center;
   align-self: flex-end;
   margin-bottom: 132px;
+  border: none;
 }
 
 .submit-btn:hover {
@@ -197,4 +212,85 @@
 .submit-icon {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(108deg)
     brightness(104%) contrast(104%);
+}
+
+.contact-tablet {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .contact {
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+
+  .contact-tablet {
+    display: inherit;
+  }
+
+  .contact-project {
+    padding-bottom: 200px;
+  }
+
+  .contact-project-info {
+    right: 0px;
+    margin-right: 0px;
+    margin-left: 58px;
+    bottom: 0px;
+    padding-bottom: 0px;
+    padding-left: 60px;
+    height: 431px;
+  }
+
+  .break-icon {
+    padding-left: 0;
+  }
+
+  .contact-details {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .above-map {
+    padding-bottom: 200px;
+  }
+
+  .contact-section-title {
+    position: absolute;
+    top: -85px;
+    font-weight: 700;
+    font-size: 145px;
+    line-height: 200px;
+    color: #eeeff4;
+    right: 0;
+  }
+
+  .contact-info-break {
+    height: 1px;
+    width: 65px;
+    background-color: #c8ccd8;
+    margin-bottom: 73px;
+    margin-top: 33px;
+  }
+
+  .map-container {
+    max-width: 100vw;
+  }
+
+  .contact-details-map {
+    max-width: 100%;
+  }
+
+  .contact-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .contact-connect {
+    padding: 0;
+  }
 }
