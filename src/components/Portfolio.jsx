@@ -25,6 +25,18 @@ import hypersTablet from "../assets/portfolio/tablet/image-hypers.jpg";
 import sxivTablet from "../assets/portfolio/tablet/image-sxiv.jpg";
 import trinityTablet from "../assets/portfolio/tablet/image-trinity.jpg";
 import paramourTablet from "../assets/portfolio/tablet/image-paramour.jpg";
+import seraphDesktop from "../assets/portfolio/desktop/image-seraph.jpg";
+import eeboxDesktop from "../assets/portfolio/desktop/image-eebox.jpg";
+import federalDesktop from "../assets/portfolio/desktop/image-federal.jpg";
+import delSolDesktop from "../assets/portfolio/desktop/image-del-sol.jpg";
+import prototypeDesktop from "../assets/portfolio/desktop/image-prototype.jpg";
+import towerDesktop from "../assets/portfolio/desktop/image-228b.jpg";
+import edelweissDesktop from "../assets/portfolio/desktop/image-edelweiss.jpg";
+import netcryDesktop from "../assets/portfolio/desktop/image-netcry.jpg";
+import hypersDesktop from "../assets/portfolio/desktop/image-hypers.jpg";
+import sxivDesktop from "../assets/portfolio/desktop/image-sxiv.jpg";
+import trinityDesktop from "../assets/portfolio/desktop/image-trinity.jpg";
+import paramourDesktop from "../assets/portfolio/desktop/image-paramour.jpg";
 
 export default function Portfolio() {
   return (
@@ -36,7 +48,7 @@ export default function Portfolio() {
       />
       <div className="portfolio-projects">
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -47,7 +59,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={seraphTablet}
             />
-            <img src={seraphImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={seraphDesktop}
+            />
+            <img className="portfolio-project-img" src={seraphImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Seraph Station</h2>
@@ -55,7 +72,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -66,7 +83,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={eeboxTablet}
             />
-            <img src={eeboxImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={eeboxDesktop}
+            />
+            <img className="portfolio-project-img" src={eeboxImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Eebox Building</h2>
@@ -74,7 +96,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -85,7 +107,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={federalTablet}
             />
-            <img src={federalImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={federalDesktop}
+            />
+            <img className="portfolio-project-img" src={federalImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Federal II Tower</h2>
@@ -93,7 +120,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -104,7 +131,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={delSolTablet}
             />
-            <img src={delSolImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={delSolDesktop}
+            />
+            <img className="portfolio-project-img" src={delSolImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Project Del Sol</h2>
@@ -112,7 +144,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -123,7 +155,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={prototypeTablet}
             />
-            <img src={prototypeImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={prototypeDesktop}
+            />
+            <img className="portfolio-project-img" src={prototypeImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Le Prototype</h2>
@@ -131,7 +168,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -142,7 +179,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={towerTablet}
             />
-            <img src={towerImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={towerDesktop}
+            />
+            <img className="portfolio-project-img" src={towerImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">228B Tower</h2>
@@ -150,7 +192,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -161,7 +203,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={edelweissTablet}
             />
-            <img src={edelweissImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={edelweissDesktop}
+            />
+            <img className="portfolio-project-img" src={edelweissImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Grand Edelweiss Hotel</h2>
@@ -180,7 +227,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={netcryTablet}
             />
-            <img src={netcryImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={netcryDesktop}
+            />
+            <img className="portfolio-project-img" src={netcryImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Netcry Tower</h2>
@@ -188,7 +240,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -199,7 +251,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={hypersTablet}
             />
-            <img src={hypersImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={hypersDesktop}
+            />
+            <img className="portfolio-project-img" src={hypersImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Hypers</h2>
@@ -207,7 +264,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -218,7 +275,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={sxivTablet}
             />
-            <img src={sxivImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={sxivDesktop}
+            />
+            <img className="portfolio-project-img" src={sxivImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">SXIV Tower</h2>
@@ -226,7 +288,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -237,7 +299,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={trinityTablet}
             />
-            <img src={trinityImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={trinityDesktop}
+            />
+            <img className="portfolio-project-img" src={trinityImage} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Trinity Bank Tower</h2>
@@ -245,7 +312,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="portfolio-project-container">
-          <picture className="portfolio-project-img">
+          <picture>
             <source
               media="(max-width: 768px)"
               type="image/jpg"
@@ -256,7 +323,12 @@ export default function Portfolio() {
               type="image/jpg"
               srcSet={paramourTablet}
             />
-            <img src={paramourImage} />
+            <source
+              media="(min-width: 992px)"
+              type="image/jpg"
+              srcSet={paramourDesktop}
+            />
+            <img className="portfolio-project-img" src={paramourDesktop} />
           </picture>
           <div className="portfolio-project-info">
             <h2 className="portfolio-project-name">Project Peramour</h2>

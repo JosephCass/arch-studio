@@ -81,4 +81,34 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .portfolio-projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, max(350px));
+    grid-template-rows: repeat(auto-fit, 1fr);
+    justify-content: center;
+    padding-left: 65px;
+    padding-right: 65px;
+    gap: 30px;
+  }
+
+  .portfolio-project-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .portfolio-project-img:hover {
+    cursor: pointer;
+  }
+
+  .portfolio-project-img:active {
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .portfolio-projects {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 }
