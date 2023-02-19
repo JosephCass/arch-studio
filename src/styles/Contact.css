@@ -3,6 +3,7 @@
   flex-direction: column;
   /* align-items: center; */
   max-width: 100vw;
+  width: 100%;
 }
 
 /* Contact page project section */
@@ -127,6 +128,8 @@
   padding: 0 32px 0 32px;
   display: flex;
   flex-direction: column;
+  margin-bottom: 132px;
+  border: 0;
 }
 
 .contact-connect-title {
@@ -135,17 +138,39 @@
   font-weight: 700;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  position: relative;
+}
+
+.input-error-msg {
+  color: red;
+  position: absolute;
+  right: 0;
+  bottom: 17px;
+}
+
 .connect-name {
   border: none;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #1b1d23;
   /* height: 85px; */
   line-height: 40px;
   font-size: 20px;
   padding: 22px 0 12px 34px;
+  width: 100%;
 }
 
 .connect-name:focus {
   outline: none;
+  border-bottom: 2px solid #1b1d23;
+}
+
+.connect-name:focus::-webkit-input-placeholder {
+  color: #1b1d23;
 }
 
 .connect-name::placeholder {
@@ -161,10 +186,16 @@
   line-height: 40px;
   font-size: 20px;
   padding: 22px 0 12px 34px;
+  width: 100%;
 }
 
 .connect-email:focus {
   outline: none;
+  border-bottom: 2px solid #1b1d23;
+}
+
+.connect-email:focus::-webkit-input-placeholder {
+  color: #1b1d23;
 }
 
 .connect-email::placeholder {
@@ -180,11 +211,16 @@
   line-height: 40px;
   font-size: 20px;
   padding: 22px 34px 12px 34px;
-  resize: none;
+  resize: vertical;
 }
 
 .connect-message:focus {
   outline: none;
+  border-bottom: 2px solid #1b1d23;
+}
+
+.connect-message:focus::-webkit-input-placeholder {
+  color: #1b1d23;
 }
 
 .connect-message::placeholder {
@@ -201,7 +237,6 @@
   align-items: center;
   justify-content: center;
   align-self: flex-end;
-  margin-bottom: 132px;
   border: none;
 }
 
@@ -212,6 +247,31 @@
 .submit-icon {
   filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(108deg)
     brightness(104%) contrast(104%);
+}
+
+.invalid-input:focus::-webkit-input-placeholder {
+  color: red;
+}
+
+.invalid-input {
+  border-bottom: 2px solid red;
+  color: red;
+}
+
+.invalid-input:focus {
+  border-bottom: 2px solid red;
+}
+
+.invalid-input::placeholder {
+  color: red;
+}
+
+.input-error-msg {
+  color: red;
+  position: absolute;
+  right: 0;
+  bottom: 17px;
+  font-size: 18px;
 }
 
 .contact-tablet {
@@ -292,5 +352,74 @@
 
   .contact-connect {
     padding: 0;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .contact {
+    width: 100%;
+    padding-left: 97px;
+    padding-right: 97px;
+  }
+
+  .contact-project {
+    align-items: flex-start;
+  }
+
+  .contact-project-info {
+    left: 282px;
+    margin-left: 0;
+    padding-left: 182px;
+    width: 100%;
+    max-width: 600px;
+    padding-top: 160px;
+    bottom: 0px;
+    height: 503px;
+  }
+
+  .contact-section-title {
+    left: -98px;
+  }
+
+  .contact-info-break {
+    margin-top: 0px;
+  }
+
+  .contact-details {
+  }
+
+  .contact-desktop-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+  }
+
+  .contact-container {
+    padding-bottom: 200px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-connect {
+    flex-direction: row;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .map-container {
+    margin-bottom: 159px;
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .contact-section-title {
+    font-size: 200px;
+    line-height: 200px;
+  }
+
+  .contact-project-info {
+    left: 482px;
   }
 }

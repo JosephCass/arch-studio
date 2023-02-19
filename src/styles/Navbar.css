@@ -64,7 +64,7 @@
 }
 
 .nav-link:active {
-  color: skyblue;
+  color: #c8ccd8;
 }
 
 .tablet {
@@ -121,6 +121,13 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .nav-link-tablet:hover {
+    color: #1b1d23;
+  }
+
+  .nav-link-tablet:active {
+    color: #c8ccd8;
+  }
 }
 
 @media only screen and (min-width: 992px) {

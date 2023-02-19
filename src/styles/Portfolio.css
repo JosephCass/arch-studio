@@ -99,9 +99,6 @@
 
   .portfolio-project-img:hover {
     cursor: pointer;
-  }
-
-  .portfolio-project-img:active {
     opacity: 0.5;
   }
 }

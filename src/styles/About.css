@@ -37,9 +37,7 @@
 .about-team-info {
   position: absolute;
   padding-left: 32px;
-  /* padding-right: 32px; */
   padding-top: 65px;
-  /* padding-bottom: 76px; */
   max-width: 100vw;
   bottom: -286px;
   left: 0px;
@@ -66,6 +64,9 @@
   align-self: flex-start;
   padding-left: 32px;
   margin-bottom: 69px;
+  width: 65px;
+  height: 1px;
+  background-color: #c8ccd8;
 }
 
 /* About page heritage section */
@@ -114,11 +115,6 @@
   gap: 79px;
 }
 
-.about-leaders-profile-container {
-  width: 100%;
-  margin-bottom: 79px;
-}
-
 .profile-picture {
   height: auto;
   width: 100%;
@@ -143,6 +139,10 @@
 }
 
 .about-tablet {
+  display: none;
+}
+
+.desktop {
   display: none;
 }
 
@@ -223,4 +223,147 @@
 }
 
 @media only screen and (min-width: 992px) {
+  .mobile-tablet {
+    display: none;
+  }
+
+  .desktop {
+    display: initial;
+  }
+
+  .about {
+    margin-left: 165px;
+    margin-right: 165px;
+  }
+
+  .about-team {
+    align-items: flex-start;
+  }
+
+  .about-team-title {
+    max-width: 446px;
+  }
+
+  .about-team-text {
+    max-width: 446px;
+  }
+
+  .about-team-info {
+    left: 282px;
+    margin-left: 0;
+    padding-left: 82px;
+    width: 100%;
+    max-width: 600px;
+    padding-top: 160px;
+    bottom: 0px;
+    height: 503px;
+  }
+
+  .about-section-title {
+    font-size: 170px;
+    line-height: 200px;
+    left: 0px;
+  }
+
+  .about-info-break {
+    margin-bottom: 57px;
+    margin-top: 0px;
+  }
+
+  .about-heritage {
+    display: flex;
+    flex-direction: row;
+    gap: 124px;
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .about-heritage-title {
+    margin-bottom: 51px;
+    font-size: 72px;
+    line-height: 64px;
+  }
+
+  .desktop-break-icon {
+    display: block;
+    margin-bottom: 83px;
+    /* height: 1px;
+    width: 63px;
+    background-color: coral; */
+  }
+
+  .desktop-heritage-img {
+    height: min(50%);
+    max-width: 100%;
+    width: min(50%);
+  }
+
+  .about-leaders {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about-leaders-profiles {
+    max-width: 730px;
+    gap: 30px;
+  }
+
+  .about-leaders-profiles-container {
+    position: relative;
+  }
+
+  .media-profile-links {
+    display: none;
+  }
+
+  .profile-picture:hover ~ .media-profile-links {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -56px;
+    top: 50%;
+    margin-top: -53px;
+  }
+
+  .media-hover-icon:hover ~ .profile-picture {
+  }
+
+  .profile-picture-container:hover > .profile-picture {
+    filter: brightness(50%);
+  }
+
+  .media-profile-links:hover {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -56px;
+    top: 50%;
+    margin-top: -53px;
+  }
+
+  .profile-hover-icon {
+    filter: invert(100%) sepia(94%) saturate(6058%) hue-rotate(190deg)
+      brightness(131%) contrast(107%);
+  }
+}
+
+@media only screen and (min-width: 1250px) {
+  .about-section-title {
+    font-size: 200px;
+    line-height: 200px;
+    left: 0px;
+  }
+
+  .about-team-info {
+    left: 482px;
+  }
 }

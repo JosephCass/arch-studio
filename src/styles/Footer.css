@@ -83,8 +83,24 @@
     justify-content: center;
   }
 
+  .home-footer-title:hover {
+    background-color: #60636d;
+  }
+
+  .home-footer-title:active {
+    background-color: #c8ccd8;
+  }
+
   .home-footer-link {
     width: 11%;
+  }
+
+  .home-footer-link:hover {
+    color: #1b1d23;
+  }
+
+  .home-footer-link:active {
+    color: #c8ccd8;
   }
 
   .home-footer-link-last {

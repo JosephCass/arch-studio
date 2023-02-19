@@ -166,6 +166,7 @@ export default function Home() {
           className="home-welcome-rectangle-icon mobile"
           src={rectangleIcon}
           alt=""
+          loading="lazy"
         />
         <div className="home-welcome-info">
           <h2 className="home-welcome-title">Welcome to Arch Studio</h2>
@@ -206,13 +207,18 @@ export default function Home() {
             type="image/jpg"
             srcSet={smallTeamDesktop}
           />
-          <img className="home-team-img" src={smallTeam} />
+          <img loading="lazy" className="home-team-img" src={smallTeam} />
         </picture>
         <div className="home-team-info">
           <h2 className="home-team-title">Small team, big ideas</h2>
           <Link to="/about" className="home-team-link">
             About Us
-            <img className="home-arrow-icon" src={arrowIcon} alt="" />
+            <img
+              loading="lazy"
+              className="home-arrow-icon"
+              src={arrowIcon}
+              alt=""
+            />
           </Link>
         </div>
       </div>
@@ -225,6 +231,7 @@ export default function Home() {
               className="home-arrow-icon tablet-icon"
               src={arrowIcon}
               alt=""
+              loading="lazy"
             />
           </Link>
         </div>
@@ -246,7 +253,11 @@ export default function Home() {
                 type="image/jpg"
                 srcSet={delSolDesktop}
               />
-              <img className="home-project-paramour-img" src={delSol} />
+              <img
+                loading="lazy"
+                className="home-project-paramour-img"
+                src={delSol}
+              />
             </picture>
             <div className="home-featured-info">
               <h3 className="home-featured-name">Project Del Sol</h3>
@@ -271,7 +282,11 @@ export default function Home() {
                 type="image/jpg"
                 srcSet={towerDesktopImage}
               />
-              <img className="home-project-paramour-img" src={towerImage} />
+              <img
+                loading="lazy"
+                className="home-project-paramour-img"
+                src={towerImage}
+              />
             </picture>
             <div className="home-featured-info">
               <h3 className="home-featured-name">228B Tower</h3>
@@ -296,7 +311,11 @@ export default function Home() {
                 type="image/jpg"
                 srcSet={prototypeDesktop}
               />
-              <img className="home-project-paramour-img" src={lePrototype} />
+              <img
+                loading="lazy"
+                className="home-project-paramour-img"
+                src={lePrototype}
+              />
             </picture>
             <div className="home-featured-info">
               <h3 className="home-featured-name">Le Prototype</h3>
@@ -307,10 +326,15 @@ export default function Home() {
         </div>
         <Link to="/portfolio" className="home-featured-all-link mobile">
           See All
-          <img className="home-arrow-icon" src={arrowIcon} alt="" />
+          <img
+            loading="lazy"
+            className="home-arrow-icon"
+            src={arrowIcon}
+            alt=""
+          />
         </Link>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }
