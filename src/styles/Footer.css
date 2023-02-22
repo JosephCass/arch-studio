@@ -107,5 +107,14 @@
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1145px) {
+  .home-footer-background {
+    margin-left: 165px;
+    margin-right: 165px;
+    width: 60%;
+  }
+  .home-footer {
+    padding-left: 165px;
+    padding-right: 165px;
+  }
 }

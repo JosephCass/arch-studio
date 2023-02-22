@@ -437,6 +437,9 @@
     display: none;
   }
 
+  .home {
+  }
+
   .home-portfolio-link:hover {
     background-color: #60636d;
   }

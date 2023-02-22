@@ -5,7 +5,7 @@ import mapImage from "../assets/contact/mobile/image-map.png";
 import arrowIcon from "../assets/icons/icon-arrow.svg";
 import Footer from "../components/Footer.jsx";
 import projectTablet from "../assets/contact/tablet/image-hero.jpg";
-import sideTitle from "../assets/contact/tablet/contact-side.svg";
+import sideTitle from "../assets/contact/tablet/CONTACT.svg";
 import tabletMap from "../assets/contact/tablet/image-map.png";
 import projectDesktop from "../assets/contact/desktop/image-hero.jpg";
 import desktopMap from "../assets/contact/desktop/image-map.png";
